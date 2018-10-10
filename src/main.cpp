@@ -4,13 +4,11 @@
 byte LED_pin = 6;
 LEDToy LED1(LED_pin);
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
   LED1.begin();
 }
 
-void loop()
-{
+void loop() {
   LED1.flash(3);
 }
